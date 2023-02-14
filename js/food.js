@@ -11,8 +11,8 @@ $(document).ready(function() {
 			});
 			o = 98
 	} else var o = 90;
-	$("#nav-icon").click(function() {
-			$(this).toggleClass("fa-hamburger fa-times")
+	$(".navbar-toggler").click(function() {
+			$(".navbar-toggler #nav-icon").toggleClass("fa-hamburger fa-times")
 	}), $(window).on("load scroll resize", function() {
 			var a = $(window).scrollTop(),
 					i = $("#about").offset().top,
